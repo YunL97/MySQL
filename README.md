@@ -14,4 +14,8 @@
 # 데이터베이스, 테이블
 
 * use `<database>;` 를통해 데이터베이스 변경 가능
+* INT: 아주 큰  숫자를 다루는 경우가 아니라면 최댓값에 신경쓸 필요는 없다
+* select database(); 를 통해 현재 사용하는 db 이름을 알 수 있다
+* show tables;
+* show columns from cats; == desc cats;
 * 
