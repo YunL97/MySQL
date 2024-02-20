@@ -18,4 +18,6 @@
 * select database(); 를 통해 현재 사용하는 db 이름을 알 수 있다
 * show tables;
 * show columns from cats; == desc cats;
+* 작은따옴표로 쿼리짜는게 좋다 큰따옴표 쓰면 얘기치 못한 오류가 나올 수 있음
+* primary key: 필수일뿐만 아니라 고유해아한다. 식별자임
 * 
