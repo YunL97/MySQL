@@ -20,4 +20,7 @@
 * show columns from cats; == desc cats;
 * 작은따옴표로 쿼리짜는게 좋다 큰따옴표 쓰면 얘기치 못한 오류가 나올 수 있음
 * primary key: 필수일뿐만 아니라 고유해아한다. 식별자임
+* cat_id INT NOT NULL PRIMARY KEY === PRIMARY KEY(cat_id)
+* 프라이머리키는 자동으로 not null
+* cat_id INT AUTO_INCREMENT: 자동 증가
 * 
