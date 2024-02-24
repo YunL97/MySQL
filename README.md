@@ -23,4 +23,8 @@
 * cat_id INT NOT NULL PRIMARY KEY === PRIMARY KEY(cat_id)
 * 프라이머리키는 자동으로 not null
 * cat_id INT AUTO_INCREMENT: 자동 증가
-*  
+* Aliases: select cat_id AS id, name From cats;, 열의 이름을 다시 정해서 짧게 만들거나 쉽게 만들수 있다
+* update employees set last_name='asdasd';
+* 업데이트를 할때는 주의해줘야한다. 업데이트를 하기 전에는 select로 확인을 해봐야한다
+* delete from cats where cat_id=age;
+* 
