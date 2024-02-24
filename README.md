@@ -23,4 +23,4 @@
 * cat_id INT NOT NULL PRIMARY KEY === PRIMARY KEY(cat_id)
 * 프라이머리키는 자동으로 not null
 * cat_id INT AUTO_INCREMENT: 자동 증가
-* 
+*  
