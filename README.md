@@ -27,4 +27,10 @@
 * update employees set last_name='asdasd';
 * 업데이트를 할때는 주의해줘야한다. 업데이트를 하기 전에는 select로 확인을 해봐야한다
 * delete from cats where cat_id=age;
+  
+
+# 문자열
+* concat: sellect concat('a', 'b', 'c');  -> abc
+* concat 는 실제 데이터를 작업할때 유용 
+* select concat(author, ' ', author_b) from books;
 * 
