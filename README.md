@@ -45,4 +45,10 @@
 * order by asdf desc: 정렬 , asce(오름 차순)
 * limit: 결과수 조절
 * like: where author_fname like '%da%';, '_' _ 한개당 하나의 문자 
+
+# 집계함수
+* count: select count(*) from books where title like '%the%';
+* group by: 같은거로 묶기, select author_name, count(*) from books group by author_name
+* min, max
+* 하위커리: select * from books where pages = (select min(pages) from books);
 * 
