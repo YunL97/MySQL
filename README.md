@@ -33,4 +33,10 @@
 * concat: sellect concat('a', 'b', 'c');  -> abc
 * concat 는 실제 데이터를 작업할때 유용 
 * select concat(author, ' ', author_b) from books;
+* substring: 긴 문자열을 취해서 작은 문자열로 반환하는 함수
+* select concat(substr(title, 1, 10), '...') from books;
+* replace: 문자열 일부를 다른 대체 문자열로 바꾼다
+* reverse: 거꾸로 출력
+* char_length: 길이
+* length: 바이트길이
 * 
