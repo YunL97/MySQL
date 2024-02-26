@@ -39,4 +39,10 @@
 * reverse: 거꾸로 출력
 * char_length: 길이
 * length: 바이트길이
+
+# 정교화
+* distinct: 중복결과 제거
+* order by asdf desc: 정렬 , asce(오름 차순)
+* limit: 결과수 조절
+* like: where author_fname like '%da%';, '_' _ 한개당 하나의 문자 
 * 
