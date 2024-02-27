@@ -51,4 +51,5 @@
 * group by: 같은거로 묶기, select author_name, count(*) from books group by author_name
 * min, max
 * 하위커리: select * from books where pages = (select min(pages) from books);
-* 
+* sum: 더하기
+* avg: 평균
