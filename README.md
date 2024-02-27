@@ -53,3 +53,18 @@
 * 하위커리: select * from books where pages = (select min(pages) from books);
 * sum: 더하기
 * avg: 평균
+
+# 데이터 유형
+
+* char: 길이 고정, asd char(2)-> 크기가 고정 3이상은 안들어감, 문자 한개 넣어도 2byte 고정, 길이가 고정된거에 사용하는게 좋음
+* decimal: int를 사용하면 소수점 뒤자리는 모두 제거한다, decimal을 사용하면 정확한 소수 저장가능
+* 메모리에 소수를 저장하는것은 까다로운 작업 decimal(5,2) -> 999.99
+* float, double로 출분하다
+* date: 날짜저장, 시간포함x yyyy-mm-dd, curdate
+* time: 시간저장, hh:mm:ss, curtime
+* datetime: yyyy-mm-dd hh:mm:ss, now
+* day(2024-02-27): 무슨요일인지 알려줌
+* date_format: 날짜양식 변경 select date_format(asd, '%a %b) from people;
+* datediff: 날짜 계산 select datediff('2010-11-30', '2010-12-31') -> 31
+* timestamps: timestamps로 저장하면 효율적이고 공간을 덜차지, 특정 이벤트가 발생한 시점을 기록하거나 레코드의 마지막 업데이트 시간을 측정하는데 사용, 서버의 시간대 설정에 따라 변환되고 자동업데이트 된다
+* 
