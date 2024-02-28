@@ -70,4 +70,15 @@
   
 # 논리연산자
 
+* not equal: select * from asd where a != 'aaa';
+* not like: like 반대
+* greater than: ~보다 크다
+* between: where year between 2004 and 2014;
+* cast: 데이터 유형을 다른 데이터 유형으로 변환해준다
+  *  where birth between cast('12:00:00' as time) and cast('16:00:00' as time);
+* in: 포함된거를 찾는것 or 겹치면 안좋기 때문 where author in ('lee', 'kim','sun');
+* not in: in 반대
+* then: 
+  * select a, case when year > 2000 then 'asd' else 'cc' end from books;
+* where null 사용할때는 =null 말고 where title is null
 * 
