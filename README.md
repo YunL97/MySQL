@@ -67,4 +67,7 @@
 * date_format: 날짜양식 변경 select date_format(asd, '%a %b) from people;
 * datediff: 날짜 계산 select datediff('2010-11-30', '2010-12-31') -> 31
 * timestamps: timestamps로 저장하면 효율적이고 공간을 덜차지, 특정 이벤트가 발생한 시점을 기록하거나 레코드의 마지막 업데이트 시간을 측정하는데 사용, 서버의 시간대 설정에 따라 변환되고 자동업데이트 된다
+  
+# 논리연산자
+
 * 
