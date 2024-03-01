@@ -81,4 +81,17 @@
 * then: 
   * select a, case when year > 2000 then 'asd' else 'cc' end from books;
 * where null 사용할때는 =null 말고 where title is null
+
+# 제약조건
+
+* constraint
+* unique: phone varchar(10) not null unique, 중복 방지가능
+* check: age int check (age > 18)
+
+# 테이블변경
+* 열추가: alter table a add column b int not null;
+* 열삭제: alter table a drop column b;
+* 테이블 이름변경: rename table a to c;
+* 열 이름 변경: rename column b to c;
+* 열 수정 alter table c modiy b varchar(100);
 * 
