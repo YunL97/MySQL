@@ -98,4 +98,16 @@
 * 조인, 외래키 기본키, 일대일, 일대다, 다대다
 * 일대다: 다대다에 비해 다루기 쉽고 짧을뿐만 아니라 개발에서 가장 널리 사용되고 중심이 된다
 * 외래키: 어떤 테이블 안에 있는 다른 테이블을 참조하는 것
-* 
+```
+create table orders (
+  customer_id int,
+  foregin key (customer_id) references customers(id)
+)
+```
+* inner join: 교집합
+```
+select * from customers 
+join orders on orders.customer_id = customers.id
+```
+* left join: 왼쪽인데, 왼쪽 테이블 한개의 레코드에 여려개 오른쪽 레코드가 일치할 경우 왼쪽을 여러번 표시, 왼쪽은 무조건 표시하고, 매치되는거 없으면 null
+* right join: 왼족 반대
