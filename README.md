@@ -111,3 +111,7 @@ join orders on orders.customer_id = customers.id
 ```
 * left join: 왼쪽인데, 왼쪽 테이블 한개의 레코드에 여려개 오른쪽 레코드가 일치할 경우 왼쪽을 여러번 표시, 왼쪽은 무조건 표시하고, 매치되는거 없으면 null
 * right join: 왼족 반대
+* cascade: 외래키 사용시 그 데이터를 지우면 안지워지는데 cascade 사용하면 그 데이터를 지우면 외래키가 포함된 데이터를 삭제할 수 있다
+```
+foregin key (customer_id) references customers(id) on delete cascade
+```
