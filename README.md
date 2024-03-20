@@ -115,3 +115,7 @@ join orders on orders.customer_id = customers.id
 ```
 foregin key (customer_id) references customers(id) on delete cascade
 ```
+
+# 다대다 
+* ex) 책에 많은 저자가 있는경우, 작가들에게 많은 책이 있는 경우
+* 
