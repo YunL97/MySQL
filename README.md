@@ -118,3 +118,12 @@ foregin key (customer_id) references customers(id) on delete cascade
 
 # 다대다 
 * ex) 책에 많은 저자가 있는경우, 작가들에게 많은 책이 있는 경우
+
+# 다양한기능
+* 뷰: 저장된 쿼리로 호출시 결과집합을 생성, 뷰는 가상 테이블의 역할을 한다
+* 뷰는 늘 모든 ㅔ이블 작업이 가능한 실제 테이블처럼 취급이 안된다. 삭제, 업데이트, 삽입등의 테이블 작업이 가능한건 일부에 불과하다
+* having: group by 로 얻은 그룹을 필터링하는데 사용된다
+```
+select title, avg(rating) from asd
+group by title having count(rating) > 1 
+```
