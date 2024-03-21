@@ -127,3 +127,6 @@ foregin key (customer_id) references customers(id) on delete cascade
 select title, avg(rating) from asd
 group by title having count(rating) > 1 
 ```
+
+# 윈도우함수
+* 행과 행 간의 관계정의, 순위, 합계, 평군, 행위치 등을조작, group by 구문과 병행하여 사용하지 않을때 사용
